@@ -1,14 +1,18 @@
 class PagesController < ApplicationController
   def home
+    @wf_page_id = "5c167fe0dab57610cd77b794"
   end
 
   def services
+    @wf_page_id = "5c167fe0dab576261f77b798"
   end
 
   def about_us
+    @wf_page_id = "5c167fe0dab576137077b796"
   end
 
   def contact
+    @wf_page_id = "5c167fe0dab5765d2977b797"
   end
 
   def send_email
