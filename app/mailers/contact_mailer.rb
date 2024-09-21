@@ -6,8 +6,7 @@ class ContactMailer < ApplicationMailer
     @phone = phone
     @general_inquiry = general_inquiry
 
-    #akshayrameshwar2020@gmail.com
-    mail(to: 'rishabhjain072001@gmail.com', subject: 'New Contact Form Message', reply_to: email)
+    mail(to: 'akshayrameshwar2020@gmail.com', subject: 'New Contact Form Message', reply_to: email)
   end
 end
   
