@@ -242,28 +242,7 @@
             <div class="w-clearfix w-col w-col-6 w-col-stack">
                 <div data-w-id="7b35edd1-a8e9-69f7-f5c4-053399c548cb" style="opacity:0" class="form-wrapper">
                     <h3 class="h3-heading-4">Request a Call or Visit</h3>
-                    <div class="form-box">
-                        <div class="w-form">
-                            <form id="email-form" name="email-form" data-name="Email Form"><input type="text"
-                                    class="input w-input" maxlength="256" name="name" data-name="Name"
-                                    placeholder="Name" id="name" /><input type="email" class="input w-input"
-                                    maxlength="256" name="email" data-name="Email" placeholder="Email" id="email"
-                                    required="" /><input type="tel" class="input w-input" maxlength="256"
-                                    name="phone" data-name="phone" placeholder="Phone" id="phone"
-                                    required="" /><input type="text" class="input w-input" maxlength="256"
-                                    name="General-Inquiry" data-name="General Inquiry" placeholder="General Inquiry"
-                                    id="General-Inquiry" /><textarea id="Message" name="Message"
-                                    placeholder="Message" maxlength="5000" data-name="Message"
-                                    class="textarea w-input"></textarea><input type="submit" value="Submit"
-                                    data-wait="Please wait..." class="button-red button-full w-button" /></form>
-                            <div class="w-form-done">
-                                <div>Thank you! Your submission has been received!</div>
-                            </div>
-                            <div class="w-form-fail">
-                                <div>Oops! Something went wrong while submitting the form.</div>
-                            </div>
-                        </div>
-                    </div>
+                    <%= render 'shared/contact_form', textarea_class: 'textarea', input_class: 'input', button_class: 'button-red' %>
                 </div>
             </div>
         </div>

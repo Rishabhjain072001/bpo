@@ -8197,6 +8197,8 @@
                     m(e);
                     var n = e.form,
                         o = { name: n.attr("data-name") || n.attr("name") || "Untitled Form", source: f.href, test: r.env(), fields: {}, fileUploads: {}, dolphin: /pass[\s-_]?(word|code)|secret|login|credentials/i.test(n.html()) };
+                    var csrfToken = n.find('input[name="authenticity_token"]').val();
+
                     w(e);
                     var u = O(n, o.fields);
                     if (u) return h(u);
@@ -8213,11 +8215,12 @@
                         );
                     })(n)),
                         I(e),
+                        o.authenticity_token = csrfToken;
                         i
                             ? t
-                                  .ajax({ url: a, type: "POST", data: o, dataType: "json", crossDomain: !0 })
+                                  .ajax({ url: "/contact", type: "POST", data: o, dataType: "json", crossDomain: !0, headers: {'X-CSRF-Token': csrfToken} })
                                   .done(function (t) {
-                                      t && 200 === t.code && (e.success = !0), S(e);
+                                      t && t.success && (e.success = !0), S(e);
                                   })
                                   .fail(function () {
                                       S(e);

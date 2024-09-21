@@ -1,0 +1,19 @@
+<div class="form-box">
+  <div class="w-form">
+    <form id="email-form" name="email-form" data-name="Email Form">
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+      <input type="text" class="<%= input_class %> w-input" maxlength="256" name="name" placeholder="Name" id="name" />
+      <input type="email" class="<%= input_class %> w-input" maxlength="256" name="email" placeholder="Email" id="email" required="" />
+      <input type="tel" class="<%= input_class %> w-input" maxlength="256" name="phone" placeholder="Phone" id="phone" required="" />
+      <input type="text" class="<%= input_class %> w-input" maxlength="256" name="general_inquiry" placeholder="General Inquiry" id="general-inquiry" />
+      <textarea id="message" name="message" placeholder="Message" maxlength="5000" class="<%= textarea_class %> w-input"></textarea>
+      <input type="submit" value="Submit" data-wait="Please wait..." class="<%= button_class %> button-full w-button" />
+    </form>
+    <div class="w-form-done">
+      <div>Thank you! Your submission has been received!</div>
+    </div>
+    <div class="w-form-fail">
+      <div>Oops! Something went wrong while submitting the form.</div>
+    </div>
+  </div>
+</div>

@@ -27,24 +27,7 @@
     <div class="contact-us-form-box w-clearfix">
         <div class="form-wrapper-2">
             <h3 class="h3-heading-4">Get In Touch</h3>
-            <div class="form-box">
-                <div class="w-form">
-                    <%= form_with url: '/contact', method: :post, local: true, id: 'email-form', data: { name: 'Email Form' } do |form| %>
-                      <%= form.text_field :name, class: 'input-2 w-input', maxlength: 256, placeholder: 'Name', id: 'name' %>
-                      <%= form.email_field :email, class: 'input-2 w-input', maxlength: 256, placeholder: 'Email', id: 'email', required: true %>
-                      <%= form.telephone_field :phone, class: 'input-2 w-input', maxlength: 256, placeholder: 'Phone', id: 'phone', required: true %>
-                      <%= form.text_field :general_inquiry, class: 'input-2 w-input', maxlength: 256, placeholder: 'General Inquiry', id: 'General-Inquiry' %>
-                      <%= form.text_area :message, class: 'textarea-2 w-input', maxlength: 5000, placeholder: 'Message', id: 'Message' %>
-                      <%= form.submit 'Submit', data: { wait: 'Please wait...' }, class: 'button-red-2 button-full w-button' %>
-                    <% end %>
-                    <div class="w-form-done">
-                        <div>Thank you! Your submission has been received!</div>
-                    </div>
-                    <div class="w-form-fail">
-                        <div>Oops! Something went wrong while submitting the form.</div>
-                    </div>
-                </div>
-            </div>
+            <%= render 'shared/contact_form', textarea_class: 'textarea-2', input_class: 'input-2', button_class: 'button-red-2' %>
         </div>
     </div>
 </div>
