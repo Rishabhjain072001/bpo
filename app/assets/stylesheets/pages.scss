@@ -588,8 +588,6 @@ Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the
     font-family: Roboto, sans-serif;
     color: hsla(0, 0%, 99%, .85);
     line-height: 28px;
-    -webkit-column-count: 2;
-    column-count: 2;
 }
 
 .h4-heading-white {
@@ -643,8 +641,8 @@ Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the
     display: -ms-flexbox;
     display: flex;
     margin-top: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -1003,13 +1001,13 @@ Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the
 
 .testimonial-item {
     min-height: 120px;
-    padding: 40px 30px;
+    padding: 15px 30px 25px 15px;
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
     -webkit-transition: opacity 200ms ease;
     transition: opacity 200ms ease;
-    text-align: left;
+    text-align: center;
 }
 
 .quote-icon {
