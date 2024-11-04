@@ -614,11 +614,15 @@ Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the
     color: #7f8fa3;
 }
 
-.footer-text-2.icon-phone {
-    background-image: url("https://uploads-ssl.webflow.com/5c167fe0dab576143677b791/5c167fe0dab576329a77b7b1_icon-7.svg");
+.footer-text-2.icon-linkdin {
+    background-image: url("linkedin-logo.svg");
     background-position: 0px 0px;
     background-size: 16px;
     background-repeat: no-repeat;
+    color: #7f8fa3;
+}
+
+.footer-text-2.icon-linkdin a {
     color: #7f8fa3;
 }
 
