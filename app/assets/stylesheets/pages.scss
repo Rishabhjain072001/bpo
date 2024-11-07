@@ -39,15 +39,14 @@ Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the
 }
 
 .navbar {
-    padding-top: 10px;
-    padding-bottom: 10px;
     background-color: transparent;
+    max-height: 120px;
 }
 
 .brand-logo {
-    width: 180px;
-    height: 80px;
-    background-image: url("https://uploads-ssl.webflow.com/5c167fe0dab576143677b791/5c167fe0dab576557777b79b_logo-white.png");
+    width: 200px;
+    height: 200px;
+    background-image: url("/logo_transparent.png");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -531,7 +530,7 @@ Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the
 }
 
 .footer-logo {
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 
@@ -1061,7 +1060,7 @@ Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the
 }
 
 .nav-menu {
-    top: 11px;
+    top: 50px;
 }
 
 .columns {
@@ -1379,7 +1378,7 @@ Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the
     background-color: #fff;
     }
     .menu-button {
-    top: 12px;
+    top: 40px;
     background-color: transparent;
     }
     .topbar-btn.special {
