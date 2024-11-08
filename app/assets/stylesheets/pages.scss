@@ -506,7 +506,7 @@ Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the
 }
 
 .footer {
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 10px;
     background-color: #04254a;
     background-image: url("https://uploads-ssl.webflow.com/5c167fe0dab576143677b791/5c167fe0dab57658a477b7ac_img-3.png");
@@ -535,7 +535,7 @@ Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the
 }
 
 .socila-box {
-    padding-top: 14px;
+    padding-top: 60px;
 }
 
 .social-button {
@@ -1447,6 +1447,7 @@ Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the
     .brand-logo {
     width: 100px;
     height: 60px;
+    top: 15px;
     background-size: 100px;
     }
     .banner-text-box {
